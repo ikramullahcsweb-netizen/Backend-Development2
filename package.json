@@ -8,13 +8,19 @@
   ],
   "license": "ISC",
   "author": "Ikramullah",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config  --experimental-json-modules src/index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "datenv": "^0.0.0",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1"
   }
 }
